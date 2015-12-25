@@ -1,0 +1,10 @@
+#!/bin/bash
+export GOPATH=/w/android/EnglishVocab/web/appengine
+#ln -svf $GOPATH/dozo.co $GOPATH/src
+#(
+#    if [ ! -f $GOPATH/pkg/linux_amd64/dozo.co/text/wiki.a ]; then
+#	time go test -i
+#    fi
+    exec go test -v
+#)
+#rm -vf $GOPATH/src/dozo.co
