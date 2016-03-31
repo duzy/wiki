@@ -14,7 +14,7 @@ it. You're welcome to submit your **bug fixes**, to do so, please use the
 The following entities (AST nodes) are abstracted currently.
 
 * [WikiEntityWiki]() - The root node.
-* [WikiEntityText]() - Normal text without formatting.
+* [WikiEntityText]() - Normal text without formatting: `hello, wiki`
 * [WikiEntityTextBold]() - Bold text: `'''bold'''`
 * [WikiEntityTextItalic]() - Italic text: `''italic''`
 * [WikiEntityTextBoldItalic]() - Bold italic text: `'''''bold italic'''''`
@@ -24,18 +24,18 @@ The following entities (AST nodes) are abstracted currently.
 * [WikiEntityHeading5]() - Level 5 Head Line: `===== Heading text =====`
 * [WikiEntityLinkExternal]() - External Linkage: `[http://example.com Link label]`
 * [WikiEntityLinkInternal]() - Internal Linkage: `[[Title|Link label]]`
-* [WikiEntityLinkInternalName]()
-* [WikiEntityLinkInternalProp]()
-* [WikiEntityTemplate]()
-* [WikiEntityTemplateName]()
-* [WikiEntityTemplateProp]()
-* [WikiEntityTag]()
-* [WikiEntityTagBeg]()
-* [WikiEntityTagProp]()
-* [WikiEntityTagEnd]()
-* [WikiEntityListBulleted]()
-* [WikiEntityListNumbered]()
-* [WikiEntitySignature]()
-* [WikiEntitySignatureTimestamp]()
-* [WikiEntityIndent]()
-* [WikiEntityHR]()
+* [WikiEntityLinkInternalName]() - The name of the link: `Title`
+* [WikiEntityLinkInternalProp]() - A property of the link: `|Link label`
+* [WikiEntityTemplate]() - Template: `{{wikipedia}}`
+* [WikiEntityTemplateName]() - The name of the template.
+* [WikiEntityTemplateProp]() - A property of the template: `|prop`
+* [WikiEntityTag]() - A HTML-like tag: `<tag />`
+* [WikiEntityTagBeg]() - A HTML-like start tag: `<tag>`
+* [WikiEntityTagProp]() - A property in a HTML tag: `name="value"`
+* [WikiEntityTagEnd]() - A HTML-like end tag `</tag>`
+* [WikiEntityListBulleted]() - Normal List: `* item`
+* [WikiEntityListNumbered]() - Numbered List: `# item`
+* [WikiEntitySignature]() - Signature: `~~~`
+* [WikiEntitySignatureTimestamp]() - Signature with Timestamp: `~~~~`
+* [WikiEntityIndent]() - Indented text: `:Indented text`, `::Indented text`
+* [WikiEntityHR]() - Horizontal Line Return: `----`
