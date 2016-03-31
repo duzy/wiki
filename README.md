@@ -13,17 +13,17 @@ it. You're welcome to submit your **bug fixes**, to do so, please use the
 
 The following entities (AST nodes) are abstracted currently.
 
-* [WikiEntityWiki]()
-* [WikiEntityText]()
-* [WikiEntityTextBold]()
-* [WikiEntityTextItalic]()
-* [WikiEntityTextBoldItalic]()
-* [WikiEntityHeading2]()
-* [WikiEntityHeading3]()
-* [WikiEntityHeading4]()
-* [WikiEntityHeading5]()
-* [WikiEntityLinkExternal]()
-* [WikiEntityLinkInternal]()
+* [WikiEntityWiki]() - The root node.
+* [WikiEntityText]() - Normal text without formatting.
+* [WikiEntityTextBold]() - Bold text: `'''bold'''`
+* [WikiEntityTextItalic]() - Italic text: `''italic''`
+* [WikiEntityTextBoldItalic]() - Bold italic text: `'''''bold italic'''''`
+* [WikiEntityHeading2]() - Level 2 Head Line: `== Heading text ==`
+* [WikiEntityHeading3]() - Level 3 Head Line: `=== Heading text ===`
+* [WikiEntityHeading4]() - Level 4 Head Line: `==== Heading text ====`
+* [WikiEntityHeading5]() - Level 5 Head Line: `===== Heading text =====`
+* [WikiEntityLinkExternal]() - External Linkage: `[http://example.com Link label]`
+* [WikiEntityLinkInternal]() - Internal Linkage: `[[Title|Link label]]`
 * [WikiEntityLinkInternalName]()
 * [WikiEntityLinkInternalProp]()
 * [WikiEntityTemplate]()
