@@ -8,6 +8,10 @@ import (
 	//"strings"
 )
 
+// https://www.mediawiki.org/wiki/Markup_spec
+// https://www.mediawiki.org/wiki/Markup_spec/BNF
+// https://www.mediawiki.org/wiki/Markup_spec/EBNF
+// https://www.mediawiki.org/wiki/Preprocessor_ABNF
 //
 // Formatting
 // ----------
@@ -17,9 +21,9 @@ import (
 //
 // Links
 // -----
-//	Internal link		[[Page title|Link label]]
+//	Internal link                           [[Page title|Link label]]
 //						[[Page title]]
-//	External link		[http://www.example.org Link label]
+//	External link                           [http://www.example.org Link label]
 //						[http://www.example.org]
 //						http://www.example.org
 // Lists
@@ -121,27 +125,27 @@ var entityTypeNames = []string{
 	WikiEntityWiki:				"WikiEntityWiki",
 	WikiEntityText:				"WikiEntityText",
 	WikiEntityTextBold:			"WikiEntityTextBold",
-	WikiEntityTextItalic:		"WikiEntityTextItalic",
-	WikiEntityTextBoldItalic:	"WikiEntityTextBoldItalic",
+	WikiEntityTextItalic:                   "WikiEntityTextItalic",
+	WikiEntityTextBoldItalic:               "WikiEntityTextBoldItalic",
 	WikiEntityHeading2:			"WikiEntityHeading2",
 	WikiEntityHeading3:			"WikiEntityHeading3",
 	WikiEntityHeading4:			"WikiEntityHeading4",
 	WikiEntityHeading5:			"WikiEntityHeading5",
-	WikiEntityLinkExternal:		"WikiEntityLinkExternal",
-	WikiEntityLinkInternal:		"WikiEntityLinkInternal",
-	WikiEntityLinkInternalName: "WikiEntityLinkInternalName",
-	WikiEntityLinkInternalProp: "WikiEntityLinkInternalProp",
+	WikiEntityLinkExternal:                 "WikiEntityLinkExternal",
+	WikiEntityLinkInternal:                 "WikiEntityLinkInternal",
+	WikiEntityLinkInternalName:             "WikiEntityLinkInternalName",
+	WikiEntityLinkInternalProp:             "WikiEntityLinkInternalProp",
 	WikiEntityTemplate:			"WikiEntityTemplate",
-	WikiEntityTemplateName:		"WikiEntityTemplateName",
-	WikiEntityTemplateProp:		"WikiEntityTemplateProp",
+	WikiEntityTemplateName:                 "WikiEntityTemplateName",
+	WikiEntityTemplateProp:                 "WikiEntityTemplateProp",
 	WikiEntityTag:				"WikiEntityTag",
 	WikiEntityTagBeg:			"WikiEntityTagBeg",
 	WikiEntityTagProp:			"WikiEntityTagProp", /***/
 	WikiEntityTagEnd:			"WikiEntityTagEnd",
-	WikiEntityListBulleted:		"WikiEntityListBulleted",
-	WikiEntityListNumbered:		"WikiEntityListNumbered",
-	WikiEntitySignature:		"WikiEntitySignature",
-	WikiEntitySignatureTimestamp: "WikiEntitySignatureTimestamp",
+	WikiEntityListBulleted:                 "WikiEntityListBulleted",
+	WikiEntityListNumbered:                 "WikiEntityListNumbered",
+	WikiEntitySignature:                    "WikiEntitySignature",
+	WikiEntitySignatureTimestamp:           "WikiEntitySignatureTimestamp",
 	WikiEntityIndent:			"WikiEntityIndent",
 	WikiEntityHR:				"WikiEntityHR",
 }
