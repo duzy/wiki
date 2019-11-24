@@ -4,7 +4,7 @@ This is a Wikipedia text parser transforming wiki text into Abstract Syntax Tree
 (AST). It was written in year 2013, I think it's better to open source it.
 
 The [wiki markup](https://en.wikipedia.org/wiki/Help:Wiki_markup) format is 
-documented on Wikipedia. This parser is not complying the 
+documented on Wikipedia. This parser is not fully complying the 
 [markup spec](https://www.mediawiki.org/wiki/Markup_spec), the entities (type of
 the AST nodes) is abstracted from the [wiki markup](https://en.wikipedia.org/wiki/Help:Wiki_markup)
 instead. Be aware that *bugs still exists*, so please be careful if you're using
