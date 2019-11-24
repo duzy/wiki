@@ -8,7 +8,7 @@ documented on Wikipedia. This parser is not fully complying the
 [markup spec](https://www.mediawiki.org/wiki/Markup_spec), the entities (type of
 the AST nodes) is abstracted from the [wiki markup](https://en.wikipedia.org/wiki/Help:Wiki_markup)
 instead. Be aware that *bugs still exists*, so please be careful if you're using
-it. You're welcome to submit your **bug fixes**, to do so, please use the 
+it. You're welcome to submit your **bug fixes** using the 
 [pull requests](https://help.github.com/articles/using-pull-requests/).
 
 The following entities (AST nodes) are abstracted currently.
